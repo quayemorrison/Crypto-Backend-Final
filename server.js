@@ -16,7 +16,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://imquaye-crypto-app.netlify.app'],
+  origin: ['http://localhost:5173', 'https://crypto-app-quayemorrison.netlify.app'],
   credentials: true,
 }));
 app.use(express.json());
