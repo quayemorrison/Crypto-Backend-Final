@@ -4,7 +4,7 @@ const Crypto = require('../models/Crypto');
 // @route   GET /api/crypto
 const getCryptos = async (req, res) => {
   try {
-    const cryptos = await Crypto.find({});
+    const cryptos = await Crypto.find({ category: 'tradable' }).sort({ price: -1 });
     res.json(cryptos);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -15,7 +15,7 @@ const getCryptos = async (req, res) => {
 // @route   GET /api/crypto/gainers
 const getTopGainers = async (req, res) => {
   try {
-    const cryptos = await Crypto.find({}).sort({ change24h: -1 }).limit(10);
+    const cryptos = await Crypto.find({ category: 'gainer' }).sort({ change24h: -1 });
     res.json(cryptos);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -26,7 +26,7 @@ const getTopGainers = async (req, res) => {
 // @route   GET /api/crypto/new
 const getNewListings = async (req, res) => {
   try {
-    const cryptos = await Crypto.find({}).sort({ createdAt: -1 }).limit(10);
+    const cryptos = await Crypto.find({ category: 'new' }).sort({ createdAt: -1 });
     res.json(cryptos);
   } catch (error) {
     res.status(500).json({ message: error.message });

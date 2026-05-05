@@ -14,6 +14,7 @@ const cryptos = [
     price: 67293.06,
     image: "https://assets.coingecko.com/coins/images/1/large/bitcoin.png",
     change24h: -1.41,
+    category: "tradable"
   },
   {
     name: "Ethereum",
@@ -21,6 +22,7 @@ const cryptos = [
     price: 2087.99,
     image: "https://assets.coingecko.com/coins/images/279/large/ethereum.png",
     change24h: -2.33,
+    category: "tradable"
   },
   {
     name: "Tether",
@@ -28,6 +30,7 @@ const cryptos = [
     price: 1.00,
     image: "https://assets.coingecko.com/coins/images/325/large/Tether.png",
     change24h: 0.01,
+    category: "tradable"
   },
   {
     name: "BNB",
@@ -35,6 +38,7 @@ const cryptos = [
     price: 663.44,
     image: "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png",
     change24h: -1.83,
+    category: "tradable"
   },
   {
     name: "XRP",
@@ -42,6 +46,7 @@ const cryptos = [
     price: 1.45,
     image: "https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png",
     change24h: -1.25,
+    category: "tradable"
   },
   {
     name: "USDC",
@@ -49,6 +54,7 @@ const cryptos = [
     price: 1.00,
     image: "https://assets.coingecko.com/coins/images/6319/large/usdc.png",
     change24h: 0.00,
+    category: "tradable"
   },
 
   // === TOP GAINERS ===
@@ -58,6 +64,7 @@ const cryptos = [
     price: 0.021,
     image: "https://assets.coingecko.com/coins/images/36633/large/parcl_logo.png",
     change24h: 39.30,
+    category: "gainer"
   },
   {
     name: "Polkastarter",
@@ -65,6 +72,7 @@ const cryptos = [
     price: 0.074,
     image: "https://assets.coingecko.com/coins/images/12648/large/polkastarter.png",
     change24h: 18.86,
+    category: "gainer"
   },
   {
     name: "Kite",
@@ -72,6 +80,7 @@ const cryptos = [
     price: 0.32,
     image: "https://assets.coingecko.com/coins/images/35108/large/kiteai.jpg",
     change24h: 17.49,
+    category: "gainer"
   },
   {
     name: "SWELL",
@@ -79,6 +88,7 @@ const cryptos = [
     price: 0.0145,
     image: "https://assets.coingecko.com/coins/images/34571/large/swell.png",
     change24h: 8.73,
+    category: "gainer"
   },
   {
     name: "Subsquid",
@@ -86,6 +96,7 @@ const cryptos = [
     price: 0.042,
     image: "https://assets.coingecko.com/coins/images/34835/large/sqd.png",
     change24h: 5.87,
+    category: "gainer"
   },
   {
     name: "Plume",
@@ -93,6 +104,7 @@ const cryptos = [
     price: 0.014,
     image: "https://assets.coingecko.com/coins/images/39703/large/plume.jpg",
     change24h: 16.73,
+    category: "gainer"
   },
 
   // === NEW ON COINBASE ===
@@ -102,6 +114,7 @@ const cryptos = [
     price: 32.64,
     image: "https://assets.coingecko.com/coins/images/40845/large/hyperliquid.jpeg",
     change24h: -1.32,
+    category: "new"
   },
   {
     name: "Jupiter",
@@ -109,6 +122,7 @@ const cryptos = [
     price: 0.178,
     image: "https://assets.coingecko.com/coins/images/34188/large/jup.png",
     change24h: -6.48,
+    category: "new"
   },
   {
     name: "Lighter",
@@ -116,6 +130,7 @@ const cryptos = [
     price: 1.168,
     image: "https://assets.coingecko.com/coins/images/39496/large/lighter.png",
     change24h: -6.59,
+    category: "new"
   },
   {
     name: "Sentient",
@@ -123,6 +138,7 @@ const cryptos = [
     price: 0.025,
     image: "https://assets.coingecko.com/coins/images/39208/large/sentient.png",
     change24h: -4.22,
+    category: "new"
   },
   {
     name: "Walrus",
@@ -130,6 +146,7 @@ const cryptos = [
     price: 0.079,
     image: "https://assets.coingecko.com/coins/images/40081/large/walrus.jpg",
     change24h: -2.27,
+    category: "new"
   },
   {
     name: "Raydium",
@@ -137,6 +154,7 @@ const cryptos = [
     price: 0.621,
     image: "https://assets.coingecko.com/coins/images/16420/large/raydium.png",
     change24h: -1.05,
+    category: "new"
   },
 ];
 

@@ -21,6 +21,12 @@ const cryptoSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  category: {
+    type: String,
+    enum: ['tradable', 'gainer', 'new'],
+    required: true,
+    default: 'tradable'
+  }
 }, { timestamps: true });
 
 const Crypto = mongoose.model('Crypto', cryptoSchema);
